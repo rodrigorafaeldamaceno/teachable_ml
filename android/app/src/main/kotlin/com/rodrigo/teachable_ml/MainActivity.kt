@@ -1,4 +1,4 @@
-package com.example.teachable_ml
+package com.rodrigo.teachable_ml
 
 import io.flutter.embedding.android.FlutterActivity
 
