@@ -43,10 +43,26 @@ class _HomePageState extends State<HomePage> {
           ),
           child: Center(
             child: _image == null
-                ? Text('Sem imagem')
-                : Image.file(
-                    _image,
-                    fit: BoxFit.cover,
+                ? Text('Without image')
+                : Stack(
+                    children: [
+                      Image.file(
+                        _image,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        right: 0,
+                        child: IconButton(
+                          icon: Icon(Icons.close),
+                          onPressed: () {
+                            setState(() {
+                              _image = null;
+                              _outputs.clear();
+                            });
+                          },
+                        ),
+                      )
+                    ],
                   ),
           ),
         ),
@@ -90,7 +106,7 @@ class _HomePageState extends State<HomePage> {
   _buildResultList() {
     if (_outputs.isEmpty) {
       return Center(
-        child: Text('Sem resultados'),
+        child: Text('Without results'),
       );
     }
 

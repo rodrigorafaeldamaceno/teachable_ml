@@ -23,8 +23,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
         primaryColor: Color(0xFF212121),
-        accentColor: Colors.deepPurple,
-        primarySwatch: Colors.deepPurple,
+        accentColor: Colors.deepOrange,
+        primarySwatch: Colors.deepOrange,
+        floatingActionButtonTheme: FloatingActionButtonThemeData(
+          backgroundColor: Colors.deepOrange,
+        ),
       ),
       home: HomePage(),
     );
