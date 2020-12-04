@@ -1,14 +1,14 @@
 import 'dart:async';
-import 'dart:convert';
 import 'dart:io';
+import 'package:teachable_ml/models/examples/examples.dart';
 import 'package:teachable_ml/models/tflite_result.dart';
 import 'package:tflite/tflite.dart';
 
 class TFLiteHelper {
-  static Future loadModel() async {
+  static Future loadModel(Examples examples) async {
     await Tflite.loadModel(
-      model: "assets/model_unquant.tflite",
-      labels: "assets/labels.txt",
+      model: "assets/${examples.location}/model_unquant.tflite",
+      labels: "assets/${examples.location}/labels.txt",
       numThreads: 1,
     );
   }

@@ -1,0 +1,1 @@
+enum Types { CATS_AND_DOGS, STRAWBERRIES }
