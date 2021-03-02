@@ -22,11 +22,17 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,
-        primaryColor: Color(0xFF212121),
-        accentColor: Colors.deepOrange,
-        primarySwatch: Colors.deepOrange,
+        // primaryColor: Color(0xFF212121),
+        primaryColor: Colors.teal,
+        accentColor: Colors.teal,
+        primarySwatch: Colors.teal,
+        appBarTheme: AppBarTheme(
+          elevation: 0,
+          color: Colors.transparent,
+          centerTitle: true,
+        ),
         floatingActionButtonTheme: FloatingActionButtonThemeData(
-          backgroundColor: Colors.deepOrange,
+          backgroundColor: Colors.teal,
         ),
       ),
       home: HomePage(),

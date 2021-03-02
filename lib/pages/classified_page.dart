@@ -144,9 +144,7 @@ class _ClassifiedPageState extends State<ClassifiedPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
         title: Text(widget.example.description),
-        elevation: 0,
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.photo_camera),
