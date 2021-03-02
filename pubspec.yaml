@@ -32,6 +32,9 @@ flutter:
     - assets/strawberries/labels.txt
     - assets/strawberries/model_unquant.tflite
 
+    - assets/easyai/labels.txt
+    - assets/easyai/model_unquant.tflite
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

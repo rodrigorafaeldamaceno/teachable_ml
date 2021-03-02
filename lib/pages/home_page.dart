@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:teachable_ml/helpers/types.dart';
 import 'package:teachable_ml/models/examples/examples.dart';
 import 'package:teachable_ml/pages/classified_page.dart';
 
@@ -9,19 +8,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final listOfExamples = [
-    Examples(
-      description: 'Cats and Dogs',
-      location: 'cats_and_dogs',
-      type: Types.CATS_AND_DOGS,
-    ),
-    Examples(
-      description: 'Strawberries',
-      location: 'strawberries',
-      type: Types.STRAWBERRIES,
-    )
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

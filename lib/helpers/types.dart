@@ -1,1 +1,5 @@
-enum Types { CATS_AND_DOGS, STRAWBERRIES }
+enum Types {
+  CATS_AND_DOGS,
+  STRAWBERRIES,
+  EASY_AI,
+}
